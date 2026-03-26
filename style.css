@@ -10,7 +10,7 @@ nav {
 }
 
 nav a {
-  color: white;
+  color: rgb(241, 228, 230);
   margin: 10px;
   text-decoration: none;
   font-weight: bold;
@@ -69,3 +69,4 @@ images{
   border-radius: 10px;
   color: #b76e79;
 }
+ 
