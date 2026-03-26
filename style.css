@@ -1,11 +1,11 @@
 body {
   font-family: Arial, sans-serif;
-  background-color: #ff69b4;
+  background-color: rgb(168, 154, 154);
   margin: 0;
   text-align: center;
 }
 nav {
-  background: #ff69b4;
+  
   padding: 15px;
 }
 
@@ -17,7 +17,7 @@ nav a {
 }
 
 h1 {
-  color: #130725
+  color: #4b0aac
 }
 button {
   color: rgb(182, 23, 23);
@@ -56,6 +56,7 @@ services-section {
 }
 text {
   width: 60px;
+  color: #6b4f3c;
 }
 images{
   width: 35%;
@@ -66,4 +67,8 @@ gap: 15px;
 images{
   width: 600px;
   border-radius: 10px;
+  color: #b76e79;
+}
+headings {
+  font-display: playfair Display;
 }
