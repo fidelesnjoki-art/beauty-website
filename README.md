@@ -1,4 +1,4 @@
-# Nazareen Beauty Studio 💄
+ # Nazareen Beauty Studio 💄
 
 ## 📌 Description
 This is a beauty studio website that showcases services such as hair styling, makeup, nail services, and massage parlour.
@@ -20,7 +20,8 @@ This is a beauty studio website that showcases services such as hair styling, ma
 - Contact page with location and form
 
 ## Live Link
-(Add your GitHub Pages link here)
+https://fidelesnjoki-art.github.io/beauty-website/
+
 
 ## Author
 Fidelis
