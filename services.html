@@ -4,6 +4,14 @@
     <title>Our Services</title>
         <link rel="stylesheet" href="style.css">
  </head>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore the full price list of beauty services at Nazareen Beauty Studio: professional braiding, creative gel nail art, bridal makeup, and relaxing massages.">
+    <title>Services | Nazareen Beauty Studio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
 <body> 
     <div class="services-section">
         <div class="text">
@@ -39,7 +47,24 @@
         <li>Back massage</li>
         <li>Aromatherapy massage with essential oil</li>
     </ul>
-
+    
+    <!-- --- HEADER / NAVIGATION --- -->
+    <header id="header" class="scrolled">
+        <div class="header-container">
+            <a href="index.html" class="logo">NAZAREEN <span>STUDIO</span></a>
+            <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav id="nav-menu">
+                <a href="index.html">Home</a>
+                <a href="about-us.html">About Us</a>  
+                <a href="services.html" class="active">Services</a>
+                <a href="contact-us.html">Contact Us</a>
+            </nav>
+        </div>
+    </header>
 </div>
     </body> 
     <!--RIGHT SIDE (IMAGES)-->
@@ -51,5 +76,310 @@
         <img src="https://i.pinimg.com/control1/736x/78/be/b4/78beb444e7c9aebda0296ec61ebbd769.jpg" width="400px" height="400px">
     </div>
     <a href="home.html">Back to Home</a>
+    <!-- --- PAGE HEADER --- -->
+    <section style="background-color: var(--color-primary); padding: 140px 0 60px; text-align: center; color: var(--color-text-light);">
+        <div class="container" style="padding: 0;">
+            <span class="section-tag" style="color: var(--color-accent-gold);">Bespoke Services</span>
+            <h1 style="color: white; margin-bottom: 10px;">Our Services & Pricing</h1>
+            <p style="color: var(--color-text-muted); max-width: 600px; margin: 0 auto;">Choose from our list of carefully curated hair styling, nail care, makeup, and massage spa services.</p>
+        </div>
+    </section>
+    <!-- --- DYNAMIC CARD GRID WITH FILTERS --- -->
+    <section class="container" style="padding-bottom: 40px;">
+        <div class="filter-tabs">
+            <button class="filter-btn active" data-filter="all">All Services</button>
+            <button class="filter-btn" data-filter="hair">Hair Parlour</button>
+            <button class="filter-btn" data-filter="nails">Nail Techs</button>
+            <button class="filter-btn" data-filter="makeup">Full Make-Up</button>
+            <button class="filter-btn" data-filter="massage">Massage Parlour</button>
+        </div>
+        <div class="services-grid" id="services-cards-grid">
+            <!-- Service Card 1 -->
+            <div class="service-card" data-category="hair">
+                <div class="service-img-wrapper">
+                    <img src="assets/hair_service.png" alt="Hair Styling">
+                </div>
+                <div class="service-info">
+                    <span class="service-category">Hair Parlour</span>
+                    <h3 class="service-title">Styling, Braiding & Locs</h3>
+                    <p style="font-size: 0.85rem; color: var(--color-text-muted); margin-bottom: 15px;">Professional blowdrys, braids, custom colors, and dreadloc installation using premium scalp care products.</p>
+                    <div class="service-details">
+                        <span class="service-price">KSh 2,500+</span>
+                        <span class="service-time">1.5 - 3 Hrs</span>
+                    </div>
+                </div>
+            </div>
+            <!-- Service Card 2 -->
+            <div class="service-card" data-category="nails">
+                <div class="service-img-wrapper">
+                    <img src="assets/nail_service.png" alt="Manicure and Pedicure">
+                </div>
+                <div class="service-info">
+                    <span class="service-category">Nail Techs</span>
+                    <h3 class="service-title">Gel Mani & Creative Nail Art</h3>
+                    <p style="font-size: 0.85rem; color: var(--color-text-muted); margin-bottom: 15px;">Detailed gel extensions, overlays, classic cuticle care, and custom hand-painted nail designs.</p>
+                    <div class="service-details">
+                        <span class="service-price">KSh 1,500+</span>
+                        <span class="service-time">1 - 2 Hrs</span>
+                    </div>
+                </div>
+            </div>
+            <!-- Service Card 3 -->
+            <div class="service-card" data-category="makeup">
+                <div class="service-img-wrapper">
+                    <img src="assets/makeup_service.png" alt="Bridal makeup styling">
+                </div>
+                <div class="service-info">
+                    <span class="service-category">Full Make-Up</span>
+                    <h3 class="service-title">Glam, Party & Bridal Makeup</h3>
+                    <p style="font-size: 0.85rem; color: var(--color-text-muted); margin-bottom: 15px;">Full-face skin prep, premium foundation shade matching, custom lash application, and glamorous finishes.</p>
+                    <div class="service-details">
+                        <span class="service-price">KSh 3,000+</span>
+                        <span class="service-time">1 - 1.5 Hrs</span>
+                    </div>
+                </div>
+            </div>
+            <!-- Service Card 4 -->
+            <div class="service-card" data-category="massage">
+                <div class="service-img-wrapper">
+                    <img src="assets/massage_service.png" alt="Spa and massage session">
+                </div>
+                <div class="service-info">
+                    <span class="service-category">Massage Parlour</span>
+                    <h3 class="service-title">Aromatherapy Spa Massages</h3>
+                    <p style="font-size: 0.85rem; color: var(--color-text-muted); margin-bottom: 15px;">Relaxing aromatherapy with pure essential oils, deep back massages, reflexology, and couple sessions.</p>
+                    <div class="service-details">
+                        <span class="service-price">KSh 4,000+</span>
+                        <span class="service-time">1 - 2 Hrs</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr style="opacity: 0.05; max-width: var(--container-max-width); margin: 40px auto 0;">
+    <!-- --- DETAILED SERVICE MENU --- -->
+    <section class="container">
+        <div style="text-align: center; margin-bottom: 50px;">
+            <span class="section-tag">Full Price List</span>
+            <h2 class="section-title" style="margin: 0 auto; display: inline-block;">Detailed Studio Menu</h2>
+        </div>
+        <div class="services-detailed-section">
+            <!-- Left Column: Services list -->
+            <div class="services-list-container">
+                <!-- Hair Block -->
+                <div class="category-block" id="detailed-hair">
+                    <h2>Hair Parlour</h2>
+                    <div class="detailed-service-item">
+                        <div>
+                            <div class="detailed-service-name">Blowdry & Hair Treatment</div>
+                            <div class="detailed-service-desc">Deep wash, nourishing treatment, blow dry, and comb.</div>
+                        </div>
+                        <div class="detailed-service-price">KSh 1,200</div>
+                    </div>
+                    <div class="detailed-service-item">
+                        <div>
+                            <div class="detailed-service-name">Braiding & Custom Styling</div>
+                            <div class="detailed-service-desc">Box braids, knotless braids, twists, cornrows, and curls.</div>
+                        </div>
+                        <div class="detailed-service-price">KSh 2,500</div>
+                    </div>
+                    <div class="detailed-service-item">
+                        <div>
+                            <div class="detailed-service-name">Hair Dye & Highlights</div>
+                            <div class="detailed-service-desc">Full coloring or highlights using ammonia-free, nourishing dye.</div>
+                        </div>
+                        <div class="detailed-service-price">KSh 3,500</div>
+                    </div>
+                    <div class="detailed-service-item">
+                        <div>
+                            <div class="detailed-service-name">Artificial & Natural Dreadlocs</div>
+                            <div class="detailed-service-desc">Installation, retwist, wax-free interlocking, and dread styling.</div>
+                        </div>
+                        <div class="detailed-service-price">KSh 4,500</div>
+                    </div>
+                </div>
+                <!-- Nail Block -->
+                <div class="category-block" id="detailed-nails">
+                    <h2>Nail Techs</h2>
+                    <div class="detailed-service-item">
+                        <div>
+                            <div class="detailed-service-name">Classic Manicure & Pedicure</div>
+                            <div class="detailed-service-desc">Hand/foot soak, nail shaping, cuticle care, and massage.</div>
+                        </div>
+                        <div class="detailed-service-price">KSh 1,800</div>
+                    </div>
+                    <div class="detailed-service-item">
+                        <div>
+                            <div class="detailed-service-name">Gel Polish (Hands & Feet)</div>
+                            <div class="detailed-service-desc">Long-lasting gel colors cured under UV light. Over 100 shades.</div>
+                        </div>
+                        <div class="detailed-service-price">KSh 1,500</div>
+                    </div>
+                    <div class="detailed-service-item">
+                        <div>
+                            <div class="detailed-service-name">Acrylic Extensions & Tips</div>
+                            <div class="detailed-service-desc">Bespoke acrylic application, custom tips, and structure.</div>
+                        </div>
+                        <div class="detailed-service-price">KSh 3,000</div>
+                    </div>
+                    <div class="detailed-service-item">
+                        <div>
+                            <div class="detailed-service-name">French Tips & Custom Art</div>
+                            <div class="detailed-service-desc">French tips, metallic chrome, foils, gems, and freehand art.</div>
+                        </div>
+                        <div class="detailed-service-price">KSh 2,000</div>
+                    </div>
+                </div>
+                <!-- Makeup Block -->
+                <div class="category-block" id="detailed-makeup">
+                    <h2>Full Make-Up</h2>
+                    <div class="detailed-service-item">
+                        <div>
+                            <div class="detailed-service-name">Glam & Party Make-Up</div>
+                            <div class="detailed-service-desc">Flawless base matching, eyeshadow look, contour, and highlight.</div>
+                        </div>
+                        <div class="detailed-service-price">KSh 3,000</div>
+                    </div>
+                    <div class="detailed-service-item">
+                        <div>
+                            <div class="detailed-service-name">Bridal Make-Up Package</div>
+                            <div class="detailed-service-desc">Full luxury HD foundation prep, lashes, and settings. Consultation included.</div>
+                        </div>
+                        <div class="detailed-service-price">KSh 12,000</div>
+                    </div>
+                    <div class="detailed-service-item">
+                        <div>
+                            <div class="detailed-service-name">Eye Makeup & Lash Extension</div>
+                            <div class="detailed-service-desc">Brow filling, eyeliner styling, shadow blend, and lashes.</div>
+                        </div>
+                        <div class="detailed-service-price">KSh 1,500</div>
+                    </div>
+                </div>
+                <!-- Massage Block -->
+                <div class="category-block" id="detailed-massage">
+                    <h2>Massage Parlour</h2>
+                    <div class="detailed-service-item">
+                        <div>
+                            <div class="detailed-service-name">Back Massage & Reflexology</div>
+                            <div class="detailed-service-desc">Targeted pressure on the back, shoulders, neck, and feet.</div>
+                        </div>
+                        <div class="detailed-service-price">KSh 2,500</div>
+                    </div>
+                    <div class="detailed-service-item">
+                        <div>
+                            <div class="detailed-service-name">Aromatherapy Spa Massage</div>
+                            <div class="detailed-service-desc">Full-body massage utilizing calming, pure essential oils.</div>
+                        </div>
+                        <div class="detailed-service-price">KSh 4,000</div>
+                    </div>
+                    <div class="detailed-service-item">
+                        <div>
+                            <div class="detailed-service-name">Facial Massage & Treatment</div>
+                            <div class="detailed-service-desc">Facial cleanse, relaxing facial massage, and hydration mask.</div>
+                        </div>
+                        <div class="detailed-service-price">KSh 3,000</div>
+                    </div>
+                    <div class="detailed-service-item">
+                        <div>
+                            <div class="detailed-service-name">Couple Massage Session</div>
+                            <div class="detailed-service-desc">Simultaneous relaxing side-by-side aromatherapy massage.</div>
+                        </div>
+                        <div class="detailed-service-price">KSh 7,500</div>
+                    </div>
+                </div>
+            </div>
+            <!-- Right Column: Gallery -->
+            <div class="services-gallery">
+                <div class="gallery-item">
+                    <img src="assets/hair_service.png" alt="Hair styling service preview">
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/nail_service.png" alt="Nails service preview">
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/makeup_service.png" alt="Makeup service preview">
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/massage_service.png" alt="Massage spa preview">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- --- QUICK BOOK BANNER --- -->
+    <section style="background-color: var(--color-primary); color: white; text-align: center; padding: 80px 0;">
+        <div class="container" style="padding: 0;">
+            <h2 style="color: white; font-size: 2rem; margin-bottom: 15px;">Ready to Experience True Pampering?</h2>
+            <p style="color: var(--color-text-muted); max-width: 600px; margin: 0 auto 30px;">Appointments are filling fast. Book your hair, nails, makeup, or spa massage session today.</p>
+            <a href="contact-us.html" class="btn btn-accent">Book Your Appointment Now</a>
+        </div>
+    </section>
+    <!-- --- FOOTER --- -->
+    <footer>
+        <div class="container" style="padding: 0 0 40px;">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <a href="index.html" class="logo" style="color: white;">NAZAREEN <span>STUDIO</span></a>
+                    <p>Enhancing your natural beauty is our craft. Experience high-end salon and spa treatment in a modern, luxury setting.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-icon" aria-label="Facebook">FB</a>
+                        <a href="#" class="social-icon" aria-label="Instagram">IG</a>
+                        <a href="#" class="social-icon" aria-label="WhatsApp">WA</a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about-us.html">About Us</a></li>
+                        <li><a href="services.html">Services Offered</a></li>
+                        <li><a href="contact-us.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Contact Info</h3>
+                    <p>Moi Avenue, Nairobi</p>
+                    <p>Phone: 0705743654</p>
+                    <p>Email: info@nazareenstudio.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Nazareen Beauty Studio. All Rights Reserved.</p>
+                <p>Designed with elegance.</p>
+            </div>
+        </div>
+    </footer>
+    <!-- --- JAVASCRIPT FOR DYNAMIC TAB FILTER --- -->
+    <script>
+        // Hamburger Menu
+        const hamburger = document.getElementById('hamburger');
+        const navMenu = document.getElementById('nav-menu');
+        
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navMenu.classList.toggle('active');
+        });
+        // Tab Filter Logic
+        const filterBtns = document.querySelectorAll('.filter-btn');
+        const serviceCards = document.querySelectorAll('.service-card');
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                // Set active class on button
+                filterBtns.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                // Filter logic
+                const filterValue = btn.getAttribute('data-filter');
+                serviceCards.forEach(card => {
+                    if (filterValue === 'all' || card.getAttribute('data-category') === filterValue) {
+                        card.style.display = 'block';
+                        // Add fade-in effect
+                        card.style.animation = 'fadeIn 0.5s ease forwards';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            });
+        });
+    </script>
 </body>
+</html>
 </html>
