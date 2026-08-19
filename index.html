@@ -1,17 +1,239 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title> NAZAREEN BEAUTY STUDIO</title>
-            <link rel="stylesheet" href="style.css">
-    </head>            
-    <body>
-        <!---NAV-->
-        <nav>
-            <h1>NAZAREEN BEAUTY STUDIO</h1>
-            <a href="about-us.html">About us</a>  
-            <a href="services.html">services offered</a>
-            <a href="contact-us.html">contact us</a>
-        </nav>
-        <img src="https://i.pinimg.com/736x/59/bf/ba/59bfba093988d9ba7f0e0e1d4c3b4e09.jpg" width="600px" height="600px">
-    </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Nazareen Beauty Studio offers professional hair styling, manicure & pedicure nail services, bridal & glam makeup, and relaxing aromatherapy massages in Nairobi.">
+    <title>Nazareen Beauty Studio | Premium Salon & Spa in Nairobi</title>
+    <link rel="stylesheet" href="style.css">
+</head>            
+<body>
+    
+    <!-- --- HEADER / NAVIGATION --- -->
+    <header id="header">
+        <div class="header-container">
+            <a href="index.html" class="logo">NAZAREEN <span>STUDIO</span></a>
+            <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav id="nav-menu">
+                <a href="index.html" class="active">Home</a>
+                <a href="about-us.html">About Us</a>  
+                <a href="services.html">Services</a>
+                <a href="contact-us.html">Contact Us</a>
+            </nav>
+        </div>
+    </header>
+    <!-- --- HERO SECTION --- -->
+    <section class="hero">
+        <div class="hero-content">
+            <span class="hero-subtitle">Bespoke Beauty Experiences</span>
+            <h1>Nazareen Beauty Studio</h1>
+            <p class="hero-desc">Indulge in Nairobi's premier luxury salon and spa. We offer professional hair styling, creative nail art, flawless glamour makeup, and restorative massage therapy.</p>
+            <div class="hero-actions">
+                <a href="services.html" class="btn btn-accent">Our Services</a>
+                <a href="contact-us.html" class="btn btn-outline" style="color: white; border-color: white;">Book Session</a>
+            </div>
+        </div>
+    </section>
+    <!-- --- WELCOME / PREVIEW --- -->
+    <section class="container">
+        <div class="welcome-grid">
+            <div class="welcome-img">
+                <img src="assets/hair_service.png" alt="Hair styling session at Nazareen Beauty Studio">
+            </div>
+            <div class="welcome-text">
+                <span class="section-tag">About Our Studio</span>
+                <h2 class="section-title">Where Beauty Meets Professionalism</h2>
+                <p>Welcome to Nazareen Beauty Studio, where enhancing your natural beauty is our absolute craft. Our team of seasoned professionals is dedicated to providing you with a luxurious, relaxing experience using only the highest quality products.</p>
+                <p>From premium hair styling and bespoke coloring to detailed gel manicure art and aromatherapy massage, we invite you to sit back and let our experts pamper you.</p>
+                <a href="about-us.html" class="btn btn-primary" style="margin-top: 15px;">Learn More</a>
+            </div>
+        </div>
+    </section>
+    <!-- --- TESTIMONIALS (CAROUSEL) --- -->
+    <section class="testimonials" style="padding: 100px 0;">
+        <div class="container" style="padding: 0;">
+            <span class="section-tag" style="color: var(--color-accent-gold);">Client Stories</span>
+            <h2 class="section-title" style="color: white; margin-bottom: 50px;">What Our Clients Say</h2>
+            
+            <div class="testimonials-slider">
+                <!-- Slide 1 -->
+                <div class="slide active">
+                    <div class="quote-icon">“</div>
+                    <p class="testimonial-text">Nazareen Beauty Studio is by far the best salon in Nairobi. The hair treatment and dreadloc styling I got here was exceptional. Their service feels premium from start to finish!</p>
+                    <span class="testimonial-author">Amani Jenkins</span>
+                </div>
+                <!-- Slide 2 -->
+                <div class="slide">
+                    <div class="quote-icon">“</div>
+                    <p class="testimonial-text">I absolute love their nail art techs! They pay amazing attention to detail, and the custom gel tips last for weeks. The relaxing, modern atmosphere makes it a true retreat.</p>
+                    <span class="testimonial-author">Wanjiku Kamau</span>
+                </div>
+                <!-- Slide 3 -->
+                <div class="slide">
+                    <div class="quote-icon">“</div>
+                    <p class="testimonial-text">Their bridal glam package was absolute perfection for my wedding day. The makeup team matched my skin flawlessly and stayed through the day. Worth every single cent.</p>
+                    <span class="testimonial-author">Mercy Odhiambo</span>
+                </div>
+            </div>
+            <div class="slider-dots">
+                <span class="dot active" onclick="currentSlide(0)"></span>
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+            </div>
+        </div>
+    </section>
+    <!-- --- FAQ ACCORDION --- -->
+    <section class="container">
+        <div style="text-align: center; margin-bottom: 50px;">
+            <span class="section-tag">Got Questions?</span>
+            <h2 class="section-title" style="margin: 0 auto 15px; display: inline-block;">Frequently Asked Questions</h2>
+        </div>
+        <div class="faq-accordion">
+            <!-- FAQ 1 -->
+            <div class="faq-item">
+                <button class="faq-question">
+                    Do I need to book an appointment in advance?
+                    <span class="faq-icon">+</span>
+                </button>
+                <div class="faq-answer">
+                    <p>While we do accept walk-ins depending on availability, we highly recommend booking an appointment in advance to secure your preferred stylist, time slot, and service type.</p>
+                </div>
+            </div>
+            <!-- FAQ 2 -->
+            <div class="faq-item">
+                <button class="faq-question">
+                    Where are you located and what are your operating hours?
+                    <span class="faq-icon">+</span>
+                </button>
+                <div class="faq-answer">
+                    <p>We are located on Moi Avenue, Nairobi. We are open Monday to Saturday from 9:00 AM to 7:00 PM. We are closed on Sundays and major public holidays.</p>
+                </div>
+            </div>
+            <!-- FAQ 3 -->
+            <div class="faq-item">
+                <button class="faq-question">
+                    What beauty brands and products do you use?
+                    <span class="faq-icon">+</span>
+                </button>
+                <div class="faq-answer">
+                    <p>We pride ourselves on using premium, high-quality, dermatologically tested beauty products for all hair, skin, and nail treatments to ensure your safety and stunning results.</p>
+                </div>
+            </div>
+            <!-- FAQ 4 -->
+            <div class="faq-item">
+                <button class="faq-question">
+                    Do you offer packages for group sessions or weddings?
+                    <span class="faq-icon">+</span>
+                </button>
+                <div class="faq-answer">
+                    <p>Yes, we offer custom packages for weddings, birthdays, and group bridal showers. Please visit our services page or get in touch through our contact page for custom group bookings.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- --- FOOTER --- -->
+    <footer>
+        <div class="container" style="padding: 0 0 40px;">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <a href="index.html" class="logo" style="color: white;">NAZAREEN <span>STUDIO</span></a>
+                    <p>Enhancing your natural beauty is our craft. Experience high-end salon and spa treatment in a modern, luxury setting.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-icon" aria-label="Facebook">FB</a>
+                        <a href="#" class="social-icon" aria-label="Instagram">IG</a>
+                        <a href="#" class="social-icon" aria-label="WhatsApp">WA</a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about-us.html">About Us</a></li>
+                        <li><a href="services.html">Services Offered</a></li>
+                        <li><a href="contact-us.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Contact Info</h3>
+                    <p>Moi Avenue, Nairobi</p>
+                    <p>Phone: 0705743654</p>
+                    <p>Email: info@nazareenstudio.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Nazareen Beauty Studio. All Rights Reserved.</p>
+                <p>Designed with elegance.</p>
+            </div>
+        </div>
+    </footer>
+    <!-- --- JAVASCRIPT FOR INTERACTIONS --- -->
+    <script>
+        // Hamburger Menu Toggle
+        const hamburger = document.getElementById('hamburger');
+        const navMenu = document.getElementById('nav-menu');
+        
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navMenu.classList.toggle('active');
+        });
+        // Close menu on link click
+        document.querySelectorAll('nav a').forEach(link => {
+            link.addEventListener('click', () => {
+                hamburger.classList.remove('active');
+                navMenu.classList.remove('active');
+            });
+        });
+        // Header scroll effect
+        const header = document.getElementById('header');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+        // Testimonial Carousel Logic
+        let slideIndex = 0;
+        const slides = document.querySelectorAll('.slide');
+        const dots = document.querySelectorAll('.dot');
+        let autoSlideInterval = setInterval(nextSlide, 6000);
+        function showSlide(index) {
+            slides.forEach(slide => slide.classList.remove('active'));
+            dots.forEach(dot => dot.classList.remove('active'));
+            
+            slides[index].classList.add('active');
+            dots[index].classList.add('active');
+            slideIndex = index;
+        }
+        function nextSlide() {
+            let next = (slideIndex + 1) % slides.length;
+            showSlide(next);
+        }
+        function currentSlide(index) {
+            clearInterval(autoSlideInterval);
+            showSlide(index);
+            autoSlideInterval = setInterval(nextSlide, 6000);
+        }
+
+        const faqItems = document.querySelectorAll('.faq-item');
+        
+        faqItems.forEach(item => {
+            const questionButton = item.querySelector('.faq-question');
+            questionButton.addEventListener('click', () => {
+                const isActive = item.classList.contains('active');
+                
+
+                faqItems.forEach(faq => faq.classList.remove('active'));
+
+                if (!isActive) {
+                    item.classList.add('active');
+                }
+            });
+        });
+    </script>
+</body>
 </html>
