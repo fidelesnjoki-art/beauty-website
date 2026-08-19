@@ -1,6 +1,6 @@
- # Nazareen Beauty Studio 💄
+ # Nazareen Beauty Studio 
 
-## 📌 Description
+## Description
 This is a beauty studio website that showcases services such as hair styling, makeup, nail services, and massage parlour.
 
 ## languages Used
