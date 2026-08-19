@@ -2,6 +2,12 @@
 <html>
     <head>
     <title>About us</title>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Meet the expert team of professionals at Nazareen Beauty Studio. Learn about our story, values, and why we are Nairobi's choice for premium beauty services.">
+    <title>About Us | Nazareen Beauty Studio</title>
     <link rel="stylesheet" href="style.css">
     </head>
     <body>
@@ -11,21 +17,96 @@
     We are dedicated to enhancing your natural beauty and giving you
     a relaxing and luxurious experience.
   </p>
-
+</head>
+<body>
+    
+    <!-- --- HEADER / NAVIGATION --- -->
+    <header id="header" class="scrolled">
+        <div class="header-container">
+            <a href="index.html" class="logo">NAZAREEN <span>STUDIO</span></a>
+            <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav id="nav-menu">
+                <a href="index.html">Home</a>
+                <a href="about-us.html" class="active">About Us</a>  
+                <a href="services.html">Services</a>
+                <a href="contact-us.html">Contact Us</a>
+            </nav>
+        </div>
+    </header>
   <p>
     Our team of skilled professionals offers a wide range of services
     including hair styling, makeup, nail care, and massage therapy.
   </p>
-
+    <!-- --- PAGE HEADER --- -->
+    <section style="background-color: var(--color-primary); padding: 140px 0 60px; text-align: center; color: var(--color-text-light);">
+        <div class="container" style="padding: 0;">
+            <span class="section-tag" style="color: var(--color-accent-gold);">Our Story</span>
+            <h1 style="color: white; margin-bottom: 10px;">About Nazareen Studio</h1>
+            <p style="color: var(--color-text-muted); max-width: 600px; margin: 0 auto;">Dedicated to enhancing your natural beauty in a relaxing and luxurious sanctuary.</p>
+        </div>
+    </section>
   <p>
     We believe every client deserves to feel confident, beautiful,
     and well taken care of.
   </p>
-
+    <!-- --- STORY SECTION --- -->
+    <section class="container">
+        <div class="welcome-grid">
+            <div class="welcome-text">
+                <span class="section-tag">A Sanctuary of Care</span>
+                <h2 class="section-title">Mergin' Art & Elegance</h2>
+                <p>Founded in the heart of Nairobi, Nazareen Beauty Studio was born from a simple vision: to create a high-end salon and spa experience that combines clinical excellence, artistic creativity, and pure relaxation.</p>
+                <p>We believe every client who walks through our doors deserves personalized attention. That's why we take the time to consult, design, and execute looks that fit your unique lifestyle and personality.</p>
+                <p>Whether you visit us for a quick weekly manicure, a total hair transformation, or a restorative couple's massage, we promise to deliver nothing short of luxury care.</p>
+            </div>
+            <div class="welcome-img">
+                <img src="assets/hero_bg.png" alt="Luxury salon lobby of Nazareen Beauty Studio">
+            </div>
+        </div>
+    </section>
   <p>
     we give discounts during festive seasons to show our gratitude to our customers
   </p>
-
+    <!-- --- VALUES GRID --- -->
+    <section style="background-color: #FDFDFD; border-top: 1px solid rgba(0,0,0,0.02); border-bottom: 1px solid rgba(0,0,0,0.02);">
+        <div class="container">
+            <div style="text-align: center; margin-bottom: 50px;">
+                <span class="section-tag">Why Choose Us</span>
+                <h2 class="section-title" style="margin: 0 auto; display: inline-block;">Our Core Pillars</h2>
+            </div>
+            
+            <div class="values-grid">
+                <!-- Value 1 -->
+                <div class="value-card">
+                    <div class="value-icon">✨</div>
+                    <h3>Experienced Stylists</h3>
+                    <p>Our team consists of certified, passionate professionals who continuously train on modern global trends.</p>
+                </div>
+                <!-- Value 2 -->
+                <div class="value-card">
+                    <div class="value-icon">💄</div>
+                    <h3>Premium Products</h3>
+                    <p>We use top-tier, nourishing skin and hair products to ensure flawless styling and scalp safety.</p>
+                </div>
+                <!-- Value 3 -->
+                <div class="value-card">
+                    <div class="value-icon">🌸</div>
+                    <h3>Relaxing Oasis</h3>
+                    <p>Clean, beautifully designed spaces filled with tranquil aromas to make you feel instantly at peace.</p>
+                </div>
+                <!-- Value 4 -->
+                <div class="value-card">
+                    <div class="value-icon">💎</div>
+                    <h3>Value & Clarity</h3>
+                    <p>Transparent pricing, amazing service value, and special seasonal appreciation discounts.</p>
+                </div>
+            </div>
+        </div>
+    </section>
   <h2>Why Choose Us?</h2>
   <ul>
     <li>Professional and experienced staff</li>
@@ -36,4 +117,93 @@
   </ul>
       <a href="index.html">Back to Home</a> 
    </body>
+    <!-- --- TEAM SECTION --- -->
+    <section class="container">
+        <div style="text-align: center; margin-bottom: 50px;">
+            <span class="section-tag">Our Experts</span>
+            <h2 class="section-title" style="margin: 0 auto; display: inline-block;">Meet the Stylists</h2>
+        </div>
+        <div class="services-grid">
+            <!-- Team 1 -->
+            <div class="service-card" style="text-align: center;">
+                <div class="service-img-wrapper" style="height: 300px;">
+                    <img src="assets/hair_service.png" style="object-position: top center;" alt="Jane Wambui - Senior Hair Stylist">
+                </div>
+                <div class="service-info" style="padding: 25px;">
+                    <span class="service-category">Hair Specialist</span>
+                    <h3 class="service-title" style="margin-bottom: 8px;">Jane Wambui</h3>
+                    <p style="font-size: 0.85rem; color: var(--color-text-muted);">Jane has over 8 years of styling experience, specializing in modern braids, coloring, and hair health.</p>
+                </div>
+            </div>
+            <!-- Team 2 -->
+            <div class="service-card" style="text-align: center;">
+                <div class="service-img-wrapper" style="height: 300px;">
+                    <img src="assets/nail_service.png" alt="Sarah Kemboi - Creative Nail Tech">
+                </div>
+                <div class="service-info" style="padding: 25px;">
+                    <span class="service-category">Nail Tech Director</span>
+                    <h3 class="service-title" style="margin-bottom: 8px;">Sarah Kemboi</h3>
+                    <p style="font-size: 0.85rem; color: var(--color-text-muted);">Sarah is a master of acrylic structures, gel polish design, and luxurious classic manicure spa services.</p>
+                </div>
+            </div>
+            <!-- Team 3 -->
+            <div class="service-card" style="text-align: center;">
+                <div class="service-img-wrapper" style="height: 300px;">
+                    <img src="assets/makeup_service.png" style="object-position: center;" alt="Grace Mwangi - Makeup Artist">
+                </div>
+                <div class="service-info" style="padding: 25px;">
+                    <span class="service-category">Lead Makeup Artist</span>
+                    <h3 class="service-title" style="margin-bottom: 8px;">Grace Mwangi</h3>
+                    <p style="font-size: 0.85rem; color: var(--color-text-muted);">Grace creates stunning bridal and glamour cosmetics, matching base foundations and features flawlessly.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- --- FOOTER --- -->
+    <footer>
+        <div class="container" style="padding: 0 0 40px;">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <a href="index.html" class="logo" style="color: white;">NAZAREEN <span>STUDIO</span></a>
+                    <p>Enhancing your natural beauty is our craft. Experience high-end salon and spa treatment in a modern, luxury setting.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-icon" aria-label="Facebook">FB</a>
+                        <a href="#" class="social-icon" aria-label="Instagram">IG</a>
+                        <a href="#" class="social-icon" aria-label="WhatsApp">WA</a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about-us.html">About Us</a></li>
+                        <li><a href="services.html">Services Offered</a></li>
+                        <li><a href="contact-us.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Contact Info</h3>
+                    <p>Moi Avenue, Nairobi</p>
+                    <p>Phone: 0705743654</p>
+                    <p>Email: info@nazareenstudio.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Nazareen Beauty Studio. All Rights Reserved.</p>
+                <p>Designed with elegance.</p>
+            </div>
+        </div>
+    </footer>
+    <!-- --- JAVASCRIPT FOR NAVIGATION --- -->
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const navMenu = document.getElementById('nav-menu');
+        
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navMenu.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
 </html>
