@@ -2,24 +2,244 @@
 <html>
  <head>
     <title>Contact Us</title>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Book your beauty session at Nazareen Beauty Studio. Contact details, telephone, email, map directions, operating hours, and online booking form.">
+    <title>Contact Us & Book | Nazareen Beauty Studio</title>
     <link rel="stylesheet" href="style.css">
  </head>   
  <body>
     <h1>Contact Us</h1>
     <p><strong>Phone:</strong>0705743654</p>
     <p><strong>Email:</strong>Nazareen studio@gmail.com</p> 
-
+</head>   
+<body>
          <h2>Visit Us 📍</h2>
  
 <p><strong>Nazareen Beauty Studio</strong></p>
 <p>Moi Avenue, Nairobi</p>
 <p>We are open from Monday to Saturday, 9:00 AM -7:00 PM</p>
     <p>Make ur appointments with us by filling in the form or reach us via our email or whatsapp us</p>
-
+    <!-- --- HEADER / NAVIGATION --- -->
+    <header id="header" class="scrolled">
+        <div class="header-container">
+            <a href="index.html" class="logo">NAZAREEN <span>STUDIO</span></a>
+            <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav id="nav-menu">
+                <a href="index.html">Home</a>
+                <a href="about-us.html">About Us</a>  
+                <a href="services.html">Services</a>
+                <a href="contact-us.html" class="active">Contact Us</a>
+            </nav>
+        </div>
+    </header>
  <form><style>
         form {
             padding: 20px;
             border-radius: 5px;
+    <!-- --- PAGE HEADER --- -->
+    <section style="background-color: var(--color-primary); padding: 140px 0 60px; text-align: center; color: var(--color-text-light);">
+        <div class="container" style="padding: 0;">
+            <span class="section-tag" style="color: var(--color-accent-gold);">Get In Touch</span>
+            <h1 style="color: white; margin-bottom: 10px;">Contact & Booking</h1>
+            <p style="color: var(--color-text-muted); max-width: 600px; margin: 0 auto;">Reach out directly via phone or WhatsApp, visit our studio, or request an appointment using the form below.</p>
+        </div>
+    </section>
+    <!-- --- CONTACT GRID --- -->
+    <section class="container">
+        <div class="contact-grid">
+            <!-- Left: Info & Hours -->
+            <div class="contact-info">
+                <div>
+                    <span class="section-tag">Find Us</span>
+                    <h2 class="section-title" style="margin-bottom: 30px;">Studio Information</h2>
+                </div>
+                <!-- Info Item 1: Phone -->
+                <div class="info-item">
+                    <div class="info-icon">📞</div>
+                    <div class="info-text">
+                        <h3>Phone & WhatsApp</h3>
+                        <p><a href="tel:0705743654" style="color: inherit; font-weight: 500;">0705 743 654</a></p>
+                        <p style="font-size: 0.8rem; color: var(--color-text-muted);">Call or text to book instantly</p>
+                    </div>
+                </div>
+                <!-- Info Item 2: Email -->
+                <div class="info-item">
+                    <div class="info-icon">✉️</div>
+                    <div class="info-text">
+                        <h3>Email Address</h3>
+                        <p><a href="mailto:Nazareenstudio@gmail.com" style="color: inherit; font-weight: 500;">Nazareenstudio@gmail.com</a></p>
+                    </div>
+                </div>
+                <!-- Info Item 3: Hours -->
+                <div class="info-item">
+                    <div class="info-icon">🕒</div>
+                    <div class="info-text">
+                        <h3>Operating Hours</h3>
+                        <p>Monday - Saturday: 9:00 AM - 7:00 PM</p>
+                        <p>Sundays: Closed</p>
+                    </div>
+                </div>
+                <!-- Info Item 4: Address -->
+                <div class="info-item">
+                    <div class="info-icon">📍</div>
+                    <div class="info-text">
+                        <h3>Location Address</h3>
+                        <p>Nazareen Beauty Studio</p>
+                        <p>Moi Avenue, Nairobi, Kenya</p>
+                    </div>
+                </div>
+                <!-- Styled Location Map Placeholder -->
+                <div class="map-card">
+                    <div class="map-placeholder">
+                        <div class="map-icon">📍</div>
+                        <h4>Moi Avenue, Nairobi</h4>
+                        <p>We are situated in a prime, accessible spot on Moi Avenue. Easily reachable via public transport and private parking is available close by.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Right: Booking Card / Form -->
+            <div class="booking-card">
+                <h2>Request Appointment</h2>
+                <p>Fill in the form details below to reserve your pampering session. We will contact you within 30 minutes to confirm.</p>
+                
+                <form id="appointmentForm">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder=" " required>
+                        <label for="name">Your Name</label>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <input type="tel" id="phone" name="phone" placeholder=" " required>
+                            <label for="phone">Phone Number</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder=" ">
+                            <label for="email">Email Address</label>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <select id="service" name="service" required>
+                                <option value="" disabled selected hidden></option>
+                                <option value="Hair Parlour">Hair Parlour Styling</option>
+                                <option value="Nail Techs">Manicure & Nail Art</option>
+                                <option value="Full Make-Up">Glamour Make-Up</option>
+                                <option value="Massage Parlour">Aromatherapy Massage</option>
+                            </select>
+                            <label for="service">Select Service</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="datetime-local" id="appointment-date" name="appointment-date" required>
+                            <label for="appointment-date" style="top: -12px; font-size: 0.75rem; color: var(--color-accent-gold);">Preferred Date & Time</label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="notes" name="notes" placeholder=" "></textarea>
+                        <label for="notes">Special requests or comments</label>
+                    </div>
+                    <button type="submit" class="btn btn-accent" style="width: 100%; border-radius: 4px; font-weight: 600;">Request Session</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- --- FOOTER --- -->
+    <footer>
+        <div class="container" style="padding: 0 0 40px;">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <a href="index.html" class="logo" style="color: white;">NAZAREEN <span>STUDIO</span></a>
+                    <p>Enhancing your natural beauty is our craft. Experience high-end salon and spa treatment in a modern, luxury setting.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-icon" aria-label="Facebook">FB</a>
+                        <a href="#" class="social-icon" aria-label="Instagram">IG</a>
+                        <a href="#" class="social-icon" aria-label="WhatsApp">WA</a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about-us.html">About Us</a></li>
+                        <li><a href="services.html">Services Offered</a></li>
+                        <li><a href="contact-us.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Contact Info</h3>
+                    <p>Moi Avenue, Nairobi</p>
+                    <p>Phone: 0705743654</p>
+                    <p>Email: info@nazareenstudio.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Nazareen Beauty Studio. All Rights Reserved.</p>
+                <p>Designed with elegance.</p>
+            </div>
+        </div>
+    </footer>
+    <!-- --- APPOINTMENT CONFIRMATION SUCCESS MODAL --- -->
+    <div class="modal-overlay" id="modalOverlay">
+        <div class="modal-content">
+            <button class="modal-close-btn" id="closeModal" aria-label="Close modal">&times;</button>
+            <div class="modal-icon">✨</div>
+            <h3>Appointment Requested</h3>
+            <p id="modalMessage">Thank you! Your beauty session booking request has been sent. We will text or call you shortly to confirm your slot.</p>
+            <button class="btn btn-primary" id="modalOkBtn" style="border-radius: 4px;">Got It</button>
+        </div>
+    </div>
+    <!-- --- JAVASCRIPT FOR NAVIGATION & FORM SUBMISSION --- -->
+    <script>
+        // Hamburger Menu
+        const hamburger = document.getElementById('hamburger');
+        const navMenu = document.getElementById('nav-menu');
+        
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navMenu.classList.toggle('active');
+        });
+        // Form submission modal interaction
+        const form = document.getElementById('appointmentForm');
+        const modalOverlay = document.getElementById('modalOverlay');
+        const closeModal = document.getElementById('closeModal');
+        const modalOkBtn = document.getElementById('modalOkBtn');
+        const modalMessage = document.getElementById('modalMessage');
+        form.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Get form values
+            const name = document.getElementById('name').value;
+            const phone = document.getElementById('phone').value;
+            const service = document.getElementById('service').value;
+            const dateVal = document.getElementById('appointment-date').value;
+            // Format date for the message
+            let formattedDate = "";
+            if(dateVal) {
+                const dateObj = new Date(dateVal);
+                formattedDate = dateObj.toLocaleDateString('en-US', { 
+                    weekday: 'short', 
+                    month: 'short', 
+                    day: 'numeric',
+                    hour: 'numeric',
+                    minute: '2-digit'
+                });
+            } else {
+                formattedDate = "your preferred time";
+            }
+            // Customize message
+            modalMessage.innerHTML = `Thank you, <strong>${name}</strong>! Your booking request for <strong>${service}</strong> on <strong>${formattedDate}</strong> has been received. We will contact you at <strong>${phone}</strong> shortly via call or text to finalize your appointment.`;
+            // Open Modal
+            modalOverlay.classList.add('active');
+        });
+        function handleClose() {
+            modalOverlay.classList.remove('active');
+            form.reset();
         }
         input[type="submit"] {
             background-color: palevioletred;
@@ -44,4 +264,16 @@
     <br>
     <a href="index.html">Back to Home</a>
  </body>
+        closeModal.addEventListener('click', handleClose);
+        modalOkBtn.addEventListener('click', handleClose);
+        
+        // Close modal when clicking overlay background
+        modalOverlay.addEventListener('click', function(e) {
+            if(e.target === modalOverlay) {
+                handleClose();
+            }
+        });
+    </script>
+</body>
+</html>
 </html>
